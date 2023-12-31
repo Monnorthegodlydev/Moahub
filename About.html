@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About</title>
+<style>
+  /* Navigation bar styles */
+  .navbar {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: flex; /* Stretch across full width */
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center; /* Align items vertically */
+  }
+
+  .navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .navbar-nav {
+    list-style: none;
+    margin: 0;
+  }
+
+  .navbar-nav li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  /* Button styles */
+  .navbar-nav li a {
+    padding: 8px 15px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <span class="navbar-brand">Moahub Projects</span>
+      <ul class="navbar-nav">
+        <li><a href="#" onclick="progn()">Projects</a></li>
+        <li><a href="#" onclick="nondev()">NonDev Moahub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>About</h1>
+
+  <a>Licence Agreement</a>
+  <p>UNDER ALL CIRCUMSTANCES GIVE FULL CREDIT TO MONNORTHEGODLYDEV</p>
+
+  <footer>
+  <h2>About The Servers That Moahub Run</h2>
+  <p>Please Note That I Dont Own Any Of These Services or Own Any Sort Of Rights To Them</p>
+  <a>tomcat.moahub.org:</a>
+
+    <p>The website is powered by Tomcat and Guacamole.
+    Tomcat is an open-source web server and servlet container. 
+    Guacamole is an open-source remote desktop gateway.
+    Tomcat and Guacamole are licensed under the Apache License 2.0. 
+    For more information about Tomcat and Guacamole, and their licensing, please visit The offical Apache Website.</p>
+
+    <a>proxmox.moahub.org:</a>
+
+      <p>Proxmox is an open-source virtualization platform.
+      Proxmox is licensed under the GNU Affero General Public License.
+      For more information about Proxmox and its licensing, please visit the official Proxmox website.</p>
+  </footer>
+  <script>
+    function progn() {
+      window.location.href = "https://moahub.org/Projects.html";
+    }
+
+    function nondev() {
+      window.location.href = "https://moahub.org";
+    }
+  </script>
+</body>
+</html>

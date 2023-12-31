@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<title>Moahub Webserver List</title>
+<head>
+    <h1>Moahub Webserver List</h1>
+    <h2>Please Keep in mind that i dont own any of these, i just run them on a server.</h2>
+    <button id="Back">Back</button>
+</head>
+<body>
+    <button id="Prox">Proxmox</button>
+    <button id="Guac">Apache Guacamole</button>
+    <script>
+    document.getElementById("Prox").addEventListener("click", function() {
+        window.location.href = "https://proxmox.moahub.org";
+      });
+    document.getElementById("Guac").addEventListener("click", function() {
+        window.location.href = "https://tomcat.moahub.org/guacamole";
+      });
+    document.getElementById("Back").addEventListener("click", function() {
+        window.location.href = "https://moahub.org/devpage.html";
+      });
+    </script>
+</body>
+</html>

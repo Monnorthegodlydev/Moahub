@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Projects</title>
+<style>
+/* Navigation bar */
+.navbar {
+  background-color: black;
+  color: white;
+  padding: 15px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+  padding-right: 1200px;
+}
+
+.navbar-nav {
+  float: right;
+  list-style: none;
+  margin: 0;
+}
+
+.navbar-nav li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* Button styles */
+.navbar-nav li a {
+  /* Make links look like buttons */
+  padding: 8px 15px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Change cursor to a pointer when hovering */
+}
+
+/* Other styles (unchanged) */
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+/* ... */
+</style>
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <span class="navbar-brand">Moahub Projects</span>
+    <ul class="navbar-nav">
+      <li><a href="#" onclick="redirectToLicense()">License Agreement</a></li>
+      <li><a href="#" onclick="goBack()">Back</a></li>
+    </ul>
+  </nav>
+</header>
+
+<h1>Projects</h1>
+<div class="project-links">
+  <a href="about:blank">Blank</a>
+</div>
+
+<script>
+function redirectToLicense() {
+  window.location.href = "https://moahub.org/about.html";
+}
+
+function goBack() {
+    window.location.href = "https://moahub.org";
+}
+</script>
+</body>
+</html>
